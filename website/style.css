@@ -1,0 +1,99 @@
+body {
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-image: url(./bg.jpg);
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+.headline {
+  color: rgb(241, 242, 243);
+  background-color: rgba(4, 19, 71, 0.801);
+  text-align: center;
+  padding: 10px;
+  font-size: 25px;
+}
+
+#zipCode,
+#generate,
+#feelings {
+  background: #17053866;
+  width: 40%;
+  margin: 60px auto 0px;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  height: 40px;
+  text-align: center;
+  color: white;
+  display: block;
+  resize: none;
+  font-size: 15px;
+}
+
+#zipCode ::placeholder,
+#feelings ::placeholder {
+  color: white;
+  line-height: 40px;
+  font-family: sans-serif;
+}
+
+#feelings {
+  margin-top: 0;
+}
+
+#generate {
+  width: 20%;
+  margin-top: 20px;
+  cursor: pointer;
+  background: rgba(0, 13, 60, 0.815);
+}
+
+#error {
+  background-color: #5f0d0d;
+  color: white;
+  font-size: large;
+  width: 22%;
+  text-align: center;
+  margin: 0px auto 12px;
+  border-radius: 1px 0px 30px 30px;
+  display: block;
+}
+
+#entry {
+  width: 50%;
+  background: #07133340;
+  margin: 50px auto;
+  border-radius: 10px;
+  height: 208px;
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.title {
+  padding: 10px;
+  text-align: center;
+  font-size: 17px;
+}
+
+.holder {
+  justify-content: center;
+}
+
+#entryHolder {
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  height: 80%;
+  display: grid;
+  grid-template-rows: 60%;
+  grid-template-columns: 50% 50%;
+}
+
+#content {
+  grid-column: 1 / -1;
+}
+#temp {
+  font-size: 4vw;
+}
